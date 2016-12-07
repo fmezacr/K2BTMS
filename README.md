@@ -1,4 +1,4 @@
-# K2BTMS
+# K2BTMS (K2 B Type Massive Stars) 
 
 The NASA Kepler mission operated for 4 years in space, and observed one
 field uninterruptedly, providing very high precision (aprox 1 ppm) light curves
