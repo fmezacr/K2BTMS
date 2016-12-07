@@ -13,7 +13,6 @@ from astropy.io import ascii
 import os
 import bisect
 
-
 from ivs.timeseries import pergrams
 from ivs.timeseries import freqanalyse as fa
 
@@ -29,7 +28,6 @@ cat2 = 0
 cat3 = 0
 cat4 = 0
 total = 0 
-
 
 for filename in os.listdir("input"):
 	print "Processing candidate star #{0}...".format(total+1)
