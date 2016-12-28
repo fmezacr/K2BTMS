@@ -100,7 +100,7 @@ for filename in os.listdir("input"):
 		times,signal = data[:,0],data[:,1]-np.average(data[:,1])
 		#params,model = fa.iterative_prewhitening(times,signal,f0=f0,fn=fn,maxiter=maxiter,threads='max',full_output=True,stopcrit=(fa.stopcrit_scargle_snr,4.,1.))
 		#params = fa.iterative_prewhitening(freqs,ampls,f0=2,fn=7,maxiter=6,stopcrit=(fa.stopcrit_scargle_snr,4.,1,))
-		params,model = fa.iterative_prewhitening(times,signal,maxiter=maxiter,threads='max',full_output=True,stopcrit=(fa.stopcrit_scargle_snr,4.,1.),prewhiteningorder_snr=True,prewhiteningorder_snr_window=1.)
+		params,model = fa.iterative_prewhitening(times,signal,maxiter=maxiter,threads='max',full_output=True,stopcrit=(fa.stopcrit_scargle_snr,4.,1.),prewhiteningorder_snr=False,prewhiteningorder_snr_window=1.)
 		#print pl.mlab.rec2txt(params,precision=6)
 	
 		paramsSave = np.vstack((params['const'],params['ampl'],params['e_ampl'],params['freq'],params['e_freq'],params['phase'],params['e_phase'],params['stopcrit']))
